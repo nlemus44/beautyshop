@@ -1,0 +1,297 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-family: 'Times New Roman', Times, serif
+}
+.tophalf, .navbar ul,.container1, .box-3, .box-3 h1,.box-3 span, .box-3 button, .ourservices, 
+.box-4, .container2, .box-5, .container3, .box-6, .box-7, .container4, .box-8, .container6,.ourlook, .container7{
+  display: flex;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.tophalf {
+  width: 100%;
+  justify-content: space-around;
+  height: 70px;
+}
+.navbar {
+  width: 70%;
+}
+.navbar ul {
+  list-style: none;
+  justify-content: space-evenly;
+  font-size: 17px;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+.box-2 button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+.container1 {
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+  background-size: cover;
+  height: 1500px;
+  background-image: url(https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2022&q=80);
+  border-bottom-left-radius: 90% 155px;
+  border-bottom-right-radius: 7% 95px;
+  border-bottom: 5px solid rgb(162, 148, 147);
+}
+.box-3 {
+  height: 350px;
+  flex-direction: column;
+  justify-items: center;
+  width: 50%;
+  color: white;
+  margin:180px 0 0 150px;
+
+}
+.box-4 {
+  font-size: 17px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 20%;
+  margin-left: 150px;
+  width: 15%;
+}
+.container2 {
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 50px;
+
+}
+.box-5 {
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+}
+.box-6 {
+  background-color: black;
+  color: white; 
+  width: 30%;
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.box-6 ul {
+  list-style: none;
+  width: 100%;
+  font-size: 25PX;
+  display: flex;
+  flex-direction: column;
+}
+.container3 {
+  display: flex;
+  height: 750px;
+  background-color: white;
+  padding: 0 50px;
+}
+
+
+.box-7 {
+  background-image: url(https://images.unsplash.com/photo-1620331309205-b5a4669ac526?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-size: cover;
+}
+.box-8 {
+  height: 80%;
+  width: 15%;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/236x/1d/2f/86/1d2f86d45daf2cfa26aaf57419e188a5.jpg?nii=t);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+.box-mini {
+  height: 30%;
+  width: 85%;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+
+}
+.container6 {
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+}
+.ourlook {
+  flex-direction: column;
+  align-items: center;
+}
+.ourlook h3 {
+  font-size: 35px;
+}
+.container7{
+  padding: 0 100px;
+  height: 800px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box-10 {
+  background-size: cover;
+  margin: 5px;
+  flex: 1;
+  flex-basis: 20%;
+  background-image: url(https://media.istockphoto.com/photos/beauty-fashion-model-girl-with-colorful-dyed-hair-picture-id1009906140?k=6&m=1009906140&s=170667a&w=0&h=YNF6OoKvYSU5J80P9WdSM8gTImPmXGd1xWbQOmPo8E0=);
+}
+.box-11 {
+  margin: 5px;
+  background-size:cover;
+  background-image: url(https://media.istockphoto.com/photos/young-beautiful-model-with-long-wavy-well-groomed-hair-picture-id1067802752?k=6&m=1067802752&s=170667a&w=0&h=cc6wcVpHxzNdPbQV5gQ0y6VaVsV9QaYfgSOc8AdUsKs=);
+  flex-basis: 57%;
+}
+.box-12 {
+  margin: 5px;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1585870720832-ff6984746730?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  flex-basis: 57%;
+}
+.box-13 {
+  margin: 5px;
+  flex: 1;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1613966802194-d46a163af70d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  flex-basis: 20%;
+}
+.box-14 {
+  margin: 5px;
+  flex:1;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  flex-basis: 20%;
+}
+.box-15 {
+  margin: 5px;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  flex-basis: 57%;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.box-3 h1 {
+  font-size: 65px;
+  width: 70%;
+  flex-wrap: wrap;
+  margin-bottom: none ;
+}
+.box-3 span {
+  width: 70%;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+.box-3 button {
+  color: white;
+  background-color: black;
+  width: 20%;
+  height: 30px;
+  font-size:13px ;
+  text-align: center;
+}
+.ourservices {
+  justify-content: center;
+  align-items: center;
+}
+.box-4 span, p  {
+  margin-left: 10px;
+}
+p > span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.bookonline {
+  margin-left: 10px;
+  width: 55%;
+  height: 35px;
+  font-size:13px;
+}
+.box-5 h6 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.box-5 p {
+  margin-top: 0;
+  font-size: 13px;
+  width: 50%;
+  text-align: center;
+}
+
+
+.box-6, .box-7 {
+  height: 70%;
+  width: 50%;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+.box-6 p {
+  width: 40%;
+}
+.readmore {
+  margin-right: 165px;
+  color: white;
+  background-color: black;
+  font-size: 10px;
+  width: 15%;
+  height: 15%;
+}
+.box-6 h3 {
+  font-size: 28px;
+  width: 40%;
+  margin-bottom: 0;
+}
+.box-7 img {
+  width: 50%;
+}
+.box-mini h6 {
+  font-size: 10px;
+  margin: none;
+}
+.box-mini span {
+  font-size: 7px;
+  margin: none;
+  padding-bottom: 25px;
+}
